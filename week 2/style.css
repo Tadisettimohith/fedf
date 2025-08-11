@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: url('assets/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  box-shadow: 0 0 20px rgba(255,255,255,0.6);
+}
