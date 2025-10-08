@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Store</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .book-card { border: 1px solid #ccc; padding: 10px; margin: 10px; }
+    /* This rule targets ALL buttons, keep it simple */
+     button { margin-top: 5px; } 
+    
+     /* 🚀 NEW STYLES FOR YOUR CART BUTTON 🚀 */
+    .add-to-cart-btn 
+    {
+      background-color: #007bff; /* Blue for a clean look */
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .add-to-cart-btn:hover 
+    {
+      background-color: #0056b3; /* Darken on hover */
+    }
+
+    /* Style for disabled (out of stock) buttons */
+    button:disabled 
+    {
+      background-color: #ccc;
+      color: #666;
+      cursor: not-allowed;
+    }
+     .remove-from-cart-btn 
+     {
+        background-color: #dc3545; /* Red for deletion/removal */
+        color: white;
+        border: none;
+        padding: 5px 10px; /* Smaller padding since it's in the cart */
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 0.9em; /* Slightly smaller text */
+        margin-left: 10px; /* Space it out from the item details */
+        transition: background-color 0.3s;
+    }
+
+    .remove-from-cart-btn:hover 
+    {
+      background-color: #c82333; /* Darken on hover */
+    }
+
+   
+  </style>
+</head>
+<body>
+  <h1>📒 Book Store</h1>
+  <div id="book-list"></div>
+  <hr />
+  <div id="cart"></div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
